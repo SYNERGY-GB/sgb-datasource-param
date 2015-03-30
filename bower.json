@@ -1,0 +1,25 @@
+{
+  "name": "sgb-datasource-param",
+  "version": "1.0.0",
+  "homepage": "https://github.com/SYNERGY-GB/sgb-datasource-param",
+  "authors": [
+    "Saul Hernandez <sauldhernandez@gmail.com>"
+  ],
+  "description": "Allows the passing of event data as a data source",
+  "main": "dist/sgb-datasource-param.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "Propietary",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "megazord-framework": "git@github.com:SYNERGY-GB/megazord-framework.git#master"
+  }
+}

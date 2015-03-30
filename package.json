@@ -1,0 +1,24 @@
+{
+  "name": "sgb-datasource-param",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/sgb-datasource-param.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SYNERGY-GB/sgb-datasource-param.git"
+  },
+  "author": "",
+  "license": "Propietary",
+  "bugs": {
+    "url": "https://github.com/SYNERGY-GB/sgb-datasource-param/issues"
+  },
+  "homepage": "https://github.com/SYNERGY-GB/sgb-datasource-param",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "vinyl-transform": "^1.0.0"
+  }
+}
