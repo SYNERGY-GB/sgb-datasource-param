@@ -9,6 +9,7 @@ angular.module('sgb-datasource-param', ['megazord'])
                 //This is simply a pass-through, as transform can handle the plucking out of this data object.
                 deferred.resolve(params);
 
+                console.log('Promise is ' + deferred.promise);
                 return deferred.promise;
             }
         } ;
