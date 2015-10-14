@@ -1,15 +1,15 @@
 'use strict';
 
 angular.module('sgb-datasource-param', ['megazord'])
-    .factory('sgb-datasource-param', ['$q', function ($q){
+    .factory('sgb-datasource-param', ['$q', 'lodash', function ($q, _){
         return {
-            getData: function(params) {
+            getData: function(params, event) {
                 var deferred = $q.defer();
 
                 //This is simply a pass-through, as transform can handle the plucking out of this data object.
-                deferred.resolve(params);
+                var eventData = event.params || {};
+                deferred.resolve(_.merge({}, params, eventData));
 
-                console.log('Promise is ' + deferred.promise);
                 return deferred.promise;
             }
         } ;
