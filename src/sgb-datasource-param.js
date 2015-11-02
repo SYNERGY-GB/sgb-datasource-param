@@ -7,7 +7,7 @@ angular.module('sgb-datasource-param', ['megazord'])
                 var deferred = $q.defer();
 
                 //This is simply a pass-through, as transform can handle the plucking out of this data object.
-                var eventData = event.params || {};
+                var eventData = (event && event.params) || {};
                 deferred.resolve(_.merge({}, params, eventData));
 
                 return deferred.promise;
